@@ -65,6 +65,7 @@ object ExampleTeamcity : BuildType({
 
     triggers {
         vcs {
+            triggerRules = "-:.teamcity/**"
         }
     }
 
