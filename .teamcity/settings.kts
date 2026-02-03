@@ -56,7 +56,7 @@ object ExampleTeamcity : BuildType({
             id = "Maven2_1"
 
             conditions {
-                doesNotEqual("teamcity.build.branch.is_default", "true")
+                equals("teamcity.build.branch.is_default", "false")
             }
             goals = "clean test"
             runnerArgs = "-Dmaven.test.failure.ignore=true"
